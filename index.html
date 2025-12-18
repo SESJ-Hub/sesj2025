@@ -18,6 +18,12 @@
       color: #222;
     }
 
+    pre {
+      white-space: pre-wrap;   /* 改行＋自動折り返し */
+      word-wrap: break-word;  /* 長い単語も折り返す（旧仕様） */
+      overflow-wrap: break-word; /* 長い単語も折り返す（新仕様） */
+    }
+
     /* --- HEADER / HERO --- */
     header {
       background: url('hero.jpg') center/cover no-repeat;
@@ -328,5 +334,6 @@ nav {
 
 </body>
 </html>
+
 
 
