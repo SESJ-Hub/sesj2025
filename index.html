@@ -27,10 +27,15 @@
 
     /* --- HEADER / HERO --- */
     header {
-      background: url('IMG_2540.JPG') center/cover no-repeat;
+      position: relative;
+      background: url('IMG_2540.JPG') center 30%/cover no-repeat;
       color: white;
-      padding: 100px 20px;
+      height: 360px;
       text-align: center;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     header::before {
       content: "";
@@ -157,6 +162,10 @@ nav {
 
     /* --- MOBILE --- */
     @media (max-width: 768px) {
+      header {
+        height: 260px;      /* 高さだけ変える */
+      }
+
       .hamburger {
         display: flex;
       }
@@ -343,6 +352,7 @@ nav {
 
 </body>
 </html>
+
 
 
 
